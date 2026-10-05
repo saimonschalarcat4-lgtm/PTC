@@ -10,6 +10,10 @@ public class Profesor extends Persona{
         this.materia = materia;
     }
 
+    public Profesor(){
+        super();
+    }
+
     @Override
     public String hablar() {
         return "El profesor se presenta.";

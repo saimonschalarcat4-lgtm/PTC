@@ -11,6 +11,9 @@ public abstract class Persona {
         this.telefono = telefono;
     }
 
+    public Persona(){
+    }
+
     public String hablar(){
         return "Hola soy una persona.";
     }

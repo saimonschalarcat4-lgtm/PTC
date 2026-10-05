@@ -9,6 +9,10 @@ public class Estudiante extends Persona{
         this.carrera = carrera;
     }
 
+    public Estudiante() {
+
+    }
+
     @Override
     public String toString() {
         return "Estudiante: "+ cedula + " - " + nombre + " - " + telefono + " - " + carrera;

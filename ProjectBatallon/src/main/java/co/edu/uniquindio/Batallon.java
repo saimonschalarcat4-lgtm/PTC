@@ -38,8 +38,18 @@ public class Batallon {
                     encontrado = vehiculo;
                 }
             }
+
         }
         return encontrado;
+    }
+    public boolean eliminarVehiculo(String id){
+        boolean eliminado= false;
+        Vehiculo vehiculo = buscarVehiculo(id);
+        if (vehiculo != null && vehiculo.getListaDetallesMision().isEmpty()) {
+            listaVehiculos.remove(vehiculo);
+            eliminado = true;
+        }
+        return eliminado;
     }
 
     public boolean registrarMision(Mision mision) {
